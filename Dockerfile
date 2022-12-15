@@ -3,4 +3,4 @@ USER 1001
 RUN chmod 777 /opt/app-root/src ; \
     mkdir -p /var/www/html/charts/
 EXPOSE 8080
-CMD ["alias ll='ls -l'", "/usr/bin/run-httpd"]
+CMD ["/usr/bin/alias ll='ls -l'", "/usr/bin/run-httpd"]
